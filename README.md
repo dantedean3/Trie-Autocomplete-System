@@ -1,43 +1,50 @@
-\# Trie Autocomplete – Project 3
+Overview
 
+This project implements an autocomplete engine using a Trie (prefix tree) data structure.
 
+The system stores words in a Trie and efficiently returns suggestions based on user input prefixes. Trie-based autocomplete is commonly used in:
 
-\## Overview
+search engines
 
-This project implements a Trie and uses it to build an autocomplete system.
+text editors
 
+command-line tools
 
+mobile keyboard prediction
 
-Users can:
+This project demonstrates how prefix trees can be used to build fast lookup systems for large word datasets.
 
-\- Search for words
+Features
 
-\- Add/delete words
+Insert new words into the Trie
 
-\- Get autocomplete suggestions
+Delete existing words
 
-\- View stats
+Search for exact word matches
 
+Generate autocomplete suggestions from prefixes
 
+Display statistics about stored words
 
-\## How to Run
+Example Usage
 
-```bash
+Start the application:
 
 python -m src.application --data data/words.txt
 
+Example interaction:
 
-## Screenshots
+> search app
+Found word: app
 
-### Startup
-![Startup](screenshots/startup.png)
+> autocomplete ap
+apple
+application
+apply
+apt
 
-### Autocomplete
-![Autocomplete](screenshots/autocomplete.png)
+> add apex
+Word added successfully
 
-### Add/Delete/Stats
-![Operations](screenshots/operations.png)
-
-
-
-
+> delete apt
+Word removed
